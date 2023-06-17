@@ -1,0 +1,71 @@
+npx expo install react-native@0.71.8
+
+React navigation:
+npm install @react-navigation/native
+npx expo install react-native-screens react-native-safe-area-context
+
+React Stack navegação: 
+npm install @react-navigation/native-stack
+
+React Drawer navegação: 
+
+npm install @react-navigation/drawer
+npm install @react-navigation/native
+npx expo install react-native-gesture-handler react-native-reanimated
+---
+configuração do arquivo babel.config (caso de algum problema):
+```
+module.exports = function(api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo'],
+    plugins: [    
+      '@babel/plugin-proposal-export-namespace-from',
+      'react-native-reanimated/plugin',
+    ],
+  };
+};
+```
+
+---
+
+Icones utilizados:
+
+npm install --save phosphor-react-native
+
+NativeBasic:
+
+npm install native-base
+npx expo install react-native-svg@12.1.1
+npx expo install react-native-safe-area-context@3.3.2
+
+Utilizando ScrollViewcom flatlist:
+```
+npm install react-native-virtualized-view --save
+```
+
+---
+Conectando o backend ao frontend:
+
+```
+npm install axios
+```
+
+```
+npx expo install @react-native-async-storage/async-storage
+```
+
+
+
+Player de video
+
+```
+npx expo install @react-native-community/slider
+```
+
+```
+npx expo install expo-screen-orientation
+```
+
+npx expo install expo-av
+npx expo install expo-status-bar
